@@ -1,6 +1,4 @@
-# supercollider-program
+# supercollider-library
 
-A program that can combine gui with sound.
-
-Anyone is welcome to contribute.
+A library that can combine gui with sound.
 
