@@ -1,4 +1,6 @@
 # supercollider-library
 
-A library that can combine gui with sound.
+A library to create and optimize gui components related to music programs and demonstrate how they could be combined with sound.
+
+
 
