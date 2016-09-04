@@ -4,10 +4,13 @@ var window;
 var openGrid;
 
 //START SERVER SOUND
-
+/*
 s = Server.local;
 s.options.device ="ASIO4ALL";
 s.boot;
+*/
+
+var currentPath=(thisProcess.nowExecutingPath.dirname)++"/sequencer_window.scd";
 
 //WINDOW, GRID OVERFLOW INITIALIZATION
 
@@ -38,9 +41,7 @@ openGrid = Button(
   )
   .action_(
 	        { arg butt;
-
-
-		      "sequencer_window.scd".loadPaths;
+		(currentPath).loadPaths;
 
             }
            );
