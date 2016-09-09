@@ -1,5 +1,5 @@
 Grid {
-/*
+
 	var<>view;
 	var<>xlocInParent;
 	var<>ylocInParent;
@@ -149,7 +149,7 @@ Grid {
 	}
 
 
-*/
+
 
 
 

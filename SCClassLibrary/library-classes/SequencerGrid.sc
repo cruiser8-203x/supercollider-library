@@ -8,9 +8,9 @@ SequencerGrid : Grid {
 	var<> y_mouse_bar_loc;
 	var<> mouseDownIsTrue=false;
 	var<> selectionArray;
-	var<> timeIndicator;
-		var<> loopLine;
 
+		var<> loopLine;
+	var<> timeIndicator;
 	var<> p;
 
 	var<> i;
@@ -212,7 +212,7 @@ SequencerGrid : Grid {
 	}
 
 	addDeleteEvents{
-		this.parent.keyDownAction = { arg view, char, modifiers, unicode, keycode;
+		parent.keyDownAction = { arg view, char, modifiers, unicode, keycode;
 			if(keycode==46,
 				{
 					this.removeAllSelected;
@@ -230,7 +230,7 @@ SequencerGrid : Grid {
 	addMouseMove
 	{
 		arg new_butt_w_resize,musicNoteObj,x_down_f_pos;
-		this.parent.mouseMoveAction_(
+		parent.mouseMoveAction_(
 			{|view,mouse_x,mouse_y|
 				if(this.actionTypeForMusicNote==0)
 				{
@@ -245,7 +245,7 @@ SequencerGrid : Grid {
 	}
 	addGridViewDown
 	{
-		this.parent.mouseDownAction_({|view_placeholder,x_placeholder,y_placeholder|
+		parent.mouseDownAction_({|view_placeholder,x_placeholder,y_placeholder|
 
 
 
@@ -286,7 +286,7 @@ SequencerGrid : Grid {
 					{
 						if(loopLine.isNil,
 							{
-								loopLine=TimeIndicator.new1(this.parent,x_down_f_pos,0,5,this.yEndPointOfDownLine,Color.blue);
+								loopLine=TimeIndicator.new1(parent,x_down_f_pos,0,5,this.yEndPointOfDownLine,Color.blue);
 								loopLine.addTimeLineEvents(100);
 							},
 							{
@@ -317,7 +317,7 @@ SequencerGrid : Grid {
 			Out.ar(out, pan);
 		}).load(s);
 
-		timeIndicator=TimeIndicator.new1(this.parent,10,this.writingspace,4,this.yEndPointOfDownLine,Color.red);
+		timeIndicator=TimeIndicator.new1(parent,10,this.writingspace,4,this.yEndPointOfDownLine,Color.red);
 
 		timeIndicator.addTimeLineEvents(0);
 		});

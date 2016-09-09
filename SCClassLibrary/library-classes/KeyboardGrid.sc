@@ -1,5 +1,5 @@
 KeyboardGrid : Grid {
-/*
+
 	//CREATE A MUSIC NOTE
 	var<> y_down_f_pos=0;
 	var<> x_down_f_pos=0;
@@ -276,7 +276,6 @@ var<> newlayer=0;
 
 
 	}
-	*/
 
 
 }
