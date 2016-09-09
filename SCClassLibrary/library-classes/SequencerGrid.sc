@@ -8,7 +8,7 @@ SequencerGrid : Grid {
 	var<> y_mouse_bar_loc;
 	var<> mouseDownIsTrue=false;
 	var<> selectionArray;
-
+	var<> timeIndicator;
 		var<> loopLine;
 
 	var<> p;
